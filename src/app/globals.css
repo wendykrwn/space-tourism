@@ -2,22 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0B0D17;
+  --foreground: #D0D6F9;
+  --white : #FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0B0D17;
+    --foreground: #D0D6F9;
+    --white : #FFFFFF;
   }
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  height: 100vh;
 }
 
 @layer utilities {
@@ -25,3 +29,41 @@ body {
     text-wrap: balance;
   }
 }
+
+.preset-1 {
+  @apply font-primary text-[80px] md:text-[144px] lg:leading-[171.9%];
+}
+
+.text-preset-2 {
+  @apply font-primary text-[56px] md:text-[80px] lg:text-[96px] lg:leading-[114.6%];
+
+}
+
+.text-preset-3 {
+  @apply font-primary text-[24px] md:text-[40px] lg:text-[56px]  lg:leading-[64.2%];
+}
+
+.text-preset-4 {
+  @apply font-primary text-[18px] md:text-[24px] lg:text-[32px]  lg:leading-[36.7%];
+}
+
+.text-preset-5 {
+  @apply font-secondary text-[20px] lg:text-[38px] lg:leading-[33.6%];
+}
+
+.text-preset-6 {
+  @apply font-secondary text-[16px] md:text-[28px] lg:leading-[32.1%];
+}
+
+.text-preset-7 {
+  @apply font-secondary md:text-[14px] leading-[16.8%] tracking-[2px];
+}
+
+.preset-8 {
+  @apply font-secondary bg-orange-400 text-[14px] md:text-[16px] tracking-[2px] lg:leading-[19.2%];
+}
+
+.text-preset-9 {
+  @apply font-secondary text-[15px] md:text-[16px] lg:text-[18px] leading-[180%];
+}
+

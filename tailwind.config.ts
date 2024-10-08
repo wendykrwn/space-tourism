@@ -12,6 +12,14 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        primary: ['Bellefair','serif'],
+        secondary: ['"Barlow Condensed"','sans-serif'],
+        tertiary: ['Barlow','sans-serif'],
+      },
+      // backgroundImage: {
+      //   desktop: "url('/src/app/assets/home/background-home-desktop.jpg')"
+      // }
     },
   },
   plugins: [],
