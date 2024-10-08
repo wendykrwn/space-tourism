@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={"h-screen bg-cover	 bg-[url('/assets/home/background-home-desktop.jpg')]"}
+        className={"h-screen bg-cover bg-[url('/assets/home/background-home-mobile.jpg')] md:bg-[url('/assets/home/background-home-tablet.jpg')]	 lg:bg-[url('/assets/home/background-home-desktop.jpg')]"}
       >
         <div>
           <SideNav/>
