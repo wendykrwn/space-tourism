@@ -12,7 +12,7 @@ const SideNav = () => {
       };
 
     return (
-        <div className="flex items-center pt-8 px-8 lg:pt-12 lg:pl-12 md:px-0">
+        <div className="flex fixed w-full items-center pt-8 px-8 lg:pt-12 lg:pl-12 md:px-0">
             <div className="w-full relative">
                 <Image 
                     src={"/assets/shared/logo.svg"}

@@ -27,12 +27,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={"flex flex-col h-screen bg-cover bg-[url('/assets/home/background-home-mobile.jpg')] md:bg-[url('/assets/home/background-home-tablet.jpg')]	 lg:bg-[url('/assets/home/background-home-desktop.jpg')]"}
+        className={"flex flex-col relative w-full h-screen bg-cover bg-[url('/assets/home/background-home-mobile.jpg')] md:bg-[url('/assets/home/background-home-tablet.jpg')]	 lg:bg-[url('/assets/home/background-home-desktop.jpg')]"}
       >
         <div>
           <SideNav/>
         </div>
-        {children}
+        <div className="h-full">
+          {children}
+        </div>
       </body>
     </html>
   );
