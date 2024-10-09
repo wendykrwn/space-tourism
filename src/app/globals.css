@@ -55,6 +55,11 @@ body {
   @apply font-secondary text-[16px] md:text-[28px] lg:leading-[32.1%];
 }
 
+.preset-6-desktop {
+  font-family: Bellefair, serif;
+  font-size: 28px;
+}
+
 .text-preset-7 {
   @apply font-secondary md:text-[14px] leading-[16.8%] tracking-[2px];
 }
