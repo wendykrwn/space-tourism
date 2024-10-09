@@ -6,7 +6,7 @@ export default function Layout ({children}: {children:React.ReactNode}){
     return (
         <div
         className={`h-full min-h-screen bg-cover ${bgMobile} ${bgTablet} ${bgDesktop}
-            pt-[80px] lg:pt-[144px]
+            pt-[80px] md:pt-[144px]
         `}
         >
             {children}
