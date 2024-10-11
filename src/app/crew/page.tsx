@@ -10,12 +10,12 @@ const Crew = () => {
     return (
         <div className="p-6 h-full flex flex-col lg:max-w-[1110px] lg:px-0 mx-auto" >
             <StepTitle number="02" text="Meet your crew"/>
-            <div className=" h-full grid grid-rows-2">
-                <div className="grid pb-6 content-between md:max-w-[512px] justify-self-center">
-                    <div className="  ">
-                        <div className="text-center mt-8">
+            <div className=" h-full grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2">
+                <div className="grid lg:h-full pb-6 content-between md:max-w-[512px] justify-self-center">
+                    <div className="text-center lg:grid h-full row-span-3 row-start-1 lg:text-left mt-8">
+                        <div className="lg:self-center ">
                             <h4 className="text-preset-4 uppercase text-white/50 text-[18px]">{crew[currCrewIndex]?.role}</h4>
-                            <p className="text-preset-3 uppercase text-white mb-6">{crew[currCrewIndex]?.name}</p>
+                            <p className="text-preset-3 uppercase text-white mb-6 ">{crew[currCrewIndex]?.name}</p>
                             <p className="text-preset-9">{crew[currCrewIndex]?.bio}</p>
                         </div>
                     </div>
