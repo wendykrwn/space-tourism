@@ -11,8 +11,8 @@ const Crew = () => {
         <div className="p-6 h-full flex flex-col lg:max-w-[1110px] lg:px-0 mx-auto" >
             <StepTitle number="02" text="Meet your crew"/>
             <div className=" h-full grid grid-rows-2">
-                <div className="grid pb-6 content-between">
-                    <div>
+                <div className="grid pb-6 content-between md:max-w-[512px] justify-self-center">
+                    <div className="  ">
                         <div className="text-center mt-8">
                             <h4 className="text-preset-4 uppercase text-white/50 text-[18px]">{crew[currCrewIndex]?.role}</h4>
                             <p className="text-preset-3 uppercase text-white mb-6">{crew[currCrewIndex]?.name}</p>
@@ -25,8 +25,8 @@ const Crew = () => {
                     <Image 
                         src={crew[currCrewIndex]?.images?.png}
                         alt={`image of ${crew[currCrewIndex]?.name}`}
-                        width={340}
-                        height={340}
+                        width={500}
+                        height={500}
                         className="w-auto h-full"
                     />
                 </div>
