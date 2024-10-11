@@ -5,14 +5,14 @@ import { destinations } from "../data.json"
 import Statistic from "../ui/components/destination/statistic"
 import { useState } from "react"
 import TabNav from "../ui/components/destination/tabNav";
+import StepTitle from "../ui/components/stepTitle";
+
 const Destination = () => {
     const destinationNames = destinations.map(val=>val.name)
     const [currDestIndex, setCurrDestIndex] = useState(0)
     return (
     <div className="p-6 h-full flex flex-col lg:max-w-[1110px] lg:px-0 mx-auto" >
-        <div className="uppercase text-white flex justify-center md:justify-start tracking-[15%] gap-x-6">
-            <span className="font-secondary font-bold text-[16px] text-white/30 md:text-[20px] ">01</span> <span className="font-secondary text-[16px] md:text-[20px]">Pick your destination</span>
-        </div>
+        <StepTitle number="01" text="Pick your destination"/>
         <div className="flex flex-col h-full lg:flex-row lg:justify-around items-center">
             <div className="w-full lg:w-auto flex justify-center items-center p-8 lg:p-0">
                 <Image
