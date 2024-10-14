@@ -1,13 +1,14 @@
 "use client";
 
 import Image from "next/image"
-import { destinations } from "../data.json"
+import data from "../data.json"
 import Statistic from "../ui/components/destination/statistic"
 import { useState } from "react"
 import TabNav from "../ui/components/destination/tabNav";
 import StepTitle from "../ui/components/stepTitle";
 
 const Destination = () => {
+    const {destinations} = data 
     const destinationNames = destinations.map(val=>val.name)
     const [currDestIndex, setCurrDestIndex] = useState(0)
     return (

@@ -1,4 +1,4 @@
-const TabNav = ({destinationNames, currDestIndex, handleIndexDest}:{destinationNames:string[],currDestIndex:number, handleIndexDest: Function}) => {
+const TabNav = ({destinationNames, currDestIndex, handleIndexDest}:{destinationNames:string[],currDestIndex:number, handleIndexDest: ( curr : number )=>void }) => {
     return (
         <div className="flex justify-around lg:flex-row md:justify-center md:gap-x-8 lg:justify-start lg:gap-x-8 preset-8 lg:w-auto
         ">

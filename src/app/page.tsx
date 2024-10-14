@@ -1,4 +1,3 @@
-import Image from "next/image";
 import DisplayButton from "./ui/components/displaybtn";
 
 export default function Home() {

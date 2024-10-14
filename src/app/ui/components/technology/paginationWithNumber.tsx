@@ -1,4 +1,4 @@
-const PaginationWithNumber = ({currIndex,setCurrIndex, numberOfPage}:{currIndex : number, numberOfPage:number, setCurrIndex: Function}) => {
+const PaginationWithNumber = ({currIndex,setCurrIndex, numberOfPage}:{currIndex : number, numberOfPage:number, setCurrIndex: ( curr : number )=>void }) => {
     return (
         <div className="flex justify-center gap-x-4 lg:flex-col lg:justify-between">
         {

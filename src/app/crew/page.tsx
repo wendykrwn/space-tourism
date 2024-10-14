@@ -1,13 +1,14 @@
 "use client";
 
 import StepTitle from "../ui/components/stepTitle"
-import {crew} from "../data.json"
+import data from "../data.json"
 import { useState } from "react"
 import Image from "next/image";
 import Pagination from "../ui/components/crew/pagination";
 import Explanation from "../ui/components/explanation";
 const Crew = () => {
     const [currCrewIndex, setCurrCrewIndex] = useState(0)
+    const {crew} = data
     return (
         <div className="p-6 h-full flex flex-col lg:max-w-[1110px] lg:px-0 mx-auto" >
             <StepTitle number="02" text="Meet your crew"/>

@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import { technology } from "../data.json"
+import data from "../data.json"
 import { useState } from "react"
 import StepTitle from "../ui/components/stepTitle";
 import PaginationWithNumber from "../ui/components/technology/paginationWithNumber";
@@ -9,6 +9,7 @@ import Explanation from "../ui/components/explanation";
 
 const Technology = ()=> {
     const [currTechIndex, setCurrTechIndex] = useState(0)
+    const {technology} = data
     return (
         <div className="py-6 lg:max-w-[1275px] ml-auto ">
             <div className="px-6 md:mb-5 lg:px-0">
