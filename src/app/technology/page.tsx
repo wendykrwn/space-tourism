@@ -15,7 +15,7 @@ const Technology = ()=> {
                 <StepTitle number="03" text="Space launch 101"/>
             </div>
             <div className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 h-full lg:items-center">
-                <div className="flex items-center h-[322px] md:h-auto md:mb-5 order-2">
+                <div className="flex items-center h-[322px] md:h-auto lg:h-full md:mb-5 lg:order-2">
                     <Image
                         src={technology[currTechIndex].images.landscape}
                         alt={`image of ${technology[currTechIndex]?.name}`}
