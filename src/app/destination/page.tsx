@@ -26,7 +26,7 @@ const Destination = () => {
             <div className="flex flex-col gap-y-6 lg:gap-y-10 h-full  md:w-[514px] self-center lg:h-auto lg:w-full lg:max-w-[445px] ">
                 <TabNav destinationNames={destinationNames} currDestIndex={currDestIndex} handleIndexDest={setCurrDestIndex} />
                 <div>
-                    <h2 className="text-preset-2 uppercase text-center lg:text-left">{destinations[currDestIndex].name}</h2>
+                    <h2 className="text-preset-2 uppercase text-center text-white lg:text-left">{destinations[currDestIndex].name}</h2>
                     <p className="text-center text-preset-9 lg:text-left transition-opacity duration-500 ease-in-out opacity-100">
                         {destinations[currDestIndex].description}
                     </p>
